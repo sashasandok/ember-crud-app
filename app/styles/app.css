@@ -1,1 +1,9 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import "./post-card.css";
+@import "./post-list-page.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

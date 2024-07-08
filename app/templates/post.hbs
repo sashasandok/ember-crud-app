@@ -1,0 +1,10 @@
+{{page-title "Post"}}
+{{!-- {{log "this.post.list is:" this.post.list}} --}}
+
+<div class="post-list-page">
+  {{#each this.post.list as |item|}}
+    <PostCard>
+      <h4>{{item.id}} - {{item.title}}</h4>
+    </PostCard>
+  {{/each}}
+</div>
