@@ -1,0 +1,14 @@
+.post-card {
+  background-color: rgb(163 255 201 / 49.2%);
+  width: 23%;
+  height: 200px;
+  padding: 35px;
+  box-sizing: border-box;
+  margin: 10px;
+
+  &:hover {
+    background-color: white;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+}

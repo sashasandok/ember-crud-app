@@ -2,6 +2,10 @@
 
 module.exports = function (environment) {
   const ENV = {
+    fontawesome: {
+      warnIfNoIconsIncluded: false,
+      defaultPrefix: 'fal',
+    },
     modulePrefix: 'ember-crud-app',
     environment,
     rootURL: '/',

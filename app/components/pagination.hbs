@@ -1,0 +1,20 @@
+{{!-- {{yield}} --}}
+{{log "activePage is:" @activePage}}
+
+<div class="pagination">
+  {{!-- {{log "prev is:" @isPrevButtonDisabled}}
+  {{log "next is:" @isNextButtonDisabled}} --}}
+  <button
+    {{on "click" @prev}}
+    disabled={{@isPrevButtonDisabled}}
+    class="pagination-button"
+  ><IconifyIcon @icon="lucide:chevrons-left" /></button>
+  <div>Active page - {{@activePage}}</div>
+  <button
+    {{on "click" @next}}
+    disabled={{@isNextButtonDisabled}}
+    class="pagination-button"
+  >
+    <IconifyIcon @icon="lucide:chevrons-right" />
+  </button>
+</div>
